@@ -353,7 +353,7 @@ public class Picture extends SimplePicture
         Pixel topPixel = null;
         Pixel bottomPixel = null;
         Pixel[][] pixels = this.getPixels2D();
-        //Iterate through each column from zero to 171
+        //Iterate through each column from zero to mirrorPoint - 21
         for (int col = 0; col < mirrorPoint - 21; col++) {
             //Iterate through each row from 162 to 197
             for (int row = 162; row < 197; row++) {
@@ -365,7 +365,7 @@ public class Picture extends SimplePicture
                 bottomPixel.setColor(topPixel.getColor());
             }
         }
-        //Iterate through each column from zero to 308
+        //Iterate through each column from zero to mirrorPoint + 115
         for (int col = 0; col < mirrorPoint + 115; col++) {
             //Iterate through each row from 162 to 197
             for (int row = 162; row < 197; row++) {
